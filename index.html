@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujan Gharti Magar - Software Developer</title>
+  <meta name="description" content="Portfolio of Sujan Gharti Magar - Backend Developer, .NET Specialist, University of Waikato MIT Graduate." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">SGM<span class="blink">_</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+      </button>
+      <a href="#contact" class="btn-hire">Hire Me</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid"></div>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span>Available for hire</span>
+      </div>
+
+      <h1 class="hero-name reveal">
+        <span class="line-1">SUJAN</span>
+        <span class="line-2">GHARTI<span class="accent-stroke"> MAGAR</span></span>
+      </h1>
+
+      <div class="hero-title reveal">
+        <span class="title-prefix">// </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="type-cursor">|</span>
+      </div>
+
+      <p class="hero-tagline reveal">
+        Building robust backend systems &amp; modern web apps.<br />
+        .NET specialist · PostgreSQL · AWS · Hamilton, NZ
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+        <a href="https://www.linkedin.com/in/sujan-gharti-magar-nz" target="_blank" rel="noopener" class="btn-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/gmsujan" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="8">0</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative side element -->
+    <div class="hero-deco">
+      <div class="deco-ring"></div>
+      <div class="deco-ring deco-ring--2"></div>
+      <div class="deco-code">
+        <pre><code>{
+  role: "Backend Dev",
+  stack: [".NET", "C#"],
+  db: "PostgreSQL",
+  cloud: "AWS",
+  status: "hiring"
+}</code></pre>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span>01</span><span>ABOUT</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2 class="section-heading">Who I Am</h2>
+          <p>I'm a <strong>backend-focused software developer</strong> based in Hamilton, New Zealand, with a Master of Information Technology from the University of Waikato and hands-on experience building production-grade systems.</p>
+          <p>I spent over a year at <strong>Life Tech Private Limited</strong> developing backend services for Restaurant Management and POS systems, handling everything from API design to tax-compliant reporting. I love working at the intersection of <strong>clean architecture</strong> and <strong>real-world impact</strong>.</p>
+          <p>Outside of code, I coach football (head coach at Glenview United AFC), which keeps me sharp on teamwork, communication, and leading under pressure - skills I bring directly into engineering teams.</p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎓</span>
+              <div>
+                <strong>MIT Graduate</strong>
+                <span>University of Waikato - 2025</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🏆</span>
+              <div>
+                <strong>VC International Excellence Scholarship</strong>
+                <span>University of Waikato - 2024</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📍</span>
+              <div>
+                <strong>Hamilton, New Zealand</strong>
+                <span>Open to remote &amp; on-site roles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal-right">
+          <div class="about-card">
+            <div class="card-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="card-title">profile.json</span>
+            </div>
+            <pre class="card-code"><code><span class="json-key">"name"</span>: <span class="json-str">"Sujan Gharti Magar"</span>,
+<span class="json-key">"role"</span>: <span class="json-str">"Software Developer"</span>,
+<span class="json-key">"location"</span>: <span class="json-str">"Hamilton, NZ"</span>,
+<span class="json-key">"education"</span>: <span class="json-str">"MIT @ UoW"</span>,
+<span class="json-key">"languages"</span>: [
+  <span class="json-str">"C#"</span>, <span class="json-str">"JavaScript"</span>,
+  <span class="json-str">"SQL"</span>, <span class="json-str">"TypeScript"</span>
+],
+<span class="json-key">"interests"</span>: [
+  <span class="json-str">"Backend Systems"</span>,
+  <span class="json-str">"Cloud Architecture"</span>,
+  <span class="json-str">"Football Coaching"</span>
+],
+<span class="json-key">"available"</span>: <span class="json-bool">true</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label">
+        <span>02</span><span>EXPERIENCE &amp; EDUCATION</span>
+      </div>
+      <h2 class="section-heading reveal">My Journey</h2>
+
+      <div class="timeline">
+
+        <!-- Experience items -->
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-marker">
+            <span class="marker-year">2023</span>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-badge work">Work</span>
+              <span class="tcard-date">Jan – Apr 2023</span>
+            </div>
+            <h3>Software Developer Intern</h3>
+            <h4>Neo Software Private Limited · Nepal</h4>
+            <ul>
+              <li>Built a To-Do management feature in a Kanban System (C# / ASP.NET)</li>
+              <li>Implemented automated report generation to improve data visualization</li>
+              <li>Gained deep .NET ecosystem proficiency from scratch</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>C#</span><span>ASP.NET</span><span>.NET</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-marker">
+            <span class="marker-year">2023</span>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-badge work">Work</span>
+              <span class="tcard-date">May 2023 – Jun 2024</span>
+            </div>
+            <h3>Junior Backend Developer</h3>
+            <h4>Life Tech Private Limited · Nepal</h4>
+            <ul>
+              <li>Developed backend services for a Restaurant Management System &amp; Supermart POS app</li>
+              <li>Designed SAP Crystal Reports including IRD tax-compliance reports</li>
+              <li>Built backend infrastructure with .NET Framework 4.8 and PostgreSQL</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>.NET 4.8</span><span>PostgreSQL</span><span>Crystal Reports</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-marker">
+            <span class="marker-year">2024</span>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-badge edu">Education</span>
+              <span class="tcard-date">Jul 2024 – Nov 2025</span>
+            </div>
+            <h3>Master of Information Technology</h3>
+            <h4>The University of Waikato · Hamilton, NZ</h4>
+            <ul>
+              <li>Vice-Chancellor's International Excellence Scholarship recipient (2024)</li>
+              <li>Focused on cloud computing, secure web apps, and software engineering</li>
+              <li>Completed multiple industry-level internship and project papers</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>AWS</span><span>Cloud</span><span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-marker">
+            <span class="marker-year">2025</span>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-badge volunteer">Volunteer</span>
+              <span class="tcard-date">Apr 2025 – Present</span>
+            </div>
+            <h3>Head Coach</h3>
+            <h4>Glenview United AFC · Hamilton, NZ</h4>
+            <ul>
+              <li>Coaching a 12th Grade mixed team in the WaiBOP 2025 competition</li>
+              <li>Designing structured training sessions for technical &amp; tactical development</li>
+              <li>Liaising with parents, club management, and WaiBOP officials</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Leadership</span><span>Coaching</span><span>Communication</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span>03</span><span>PROJECTS</span>
+      </div>
+
+      <div class="projects-header">
+        <h2 class="section-heading reveal">What I've Built</h2>
+        <!-- Filter buttons -->
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="cloud">Cloud</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="design">UI/Design</button>
+        </div>
+      </div>
+
+      <!-- ── BENTO GRID ── -->
+      <div class="bento-grid" id="projectsGrid">
+
+        <!-- ── PROJECT 1 - FEATURED (tall left) ── -->
+        <article class="bento-card bento-featured reveal" data-category="backend fullstack">
+          <!-- 📸 Add your screenshot: src="screenshots/kaumatua.png" -->
+          <img src="img/KWRS.png" alt="Kaumātua Wellbeing Reporting System" class="bento-img" />
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-top">
+              <span class="bento-index">01</span>
+              <a href="https://github.com/gmsujan/KaumautuaWellbeingSystem.Web.git" target="_blank" rel="noopener" class="bento-gh" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+            <div class="bento-bottom">
+              <div class="bento-tags">
+                <span>C#</span><span>.NET Core</span><span>PostgreSQL</span><span>ASP.NET</span>
+              </div>
+              <h3>Kaumātua Wellbeing Reporting System</h3>
+              <p>ASP.NET Core web app for Rauawaawa Kaumātua Charitable Trust - managing kaumātua profiles, wellbeing assessments, and service coordination for Māori elders.</p>
+              <div class="bento-meta">
+                <span class="bento-badge">Group Project · CSMAX596</span>
+                <span class="bento-date">Jul – Nov 2025</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 2 ── -->
+        <article class="bento-card reveal" data-category="backend fullstack">
+          <!-- 📸 Add your screenshot: src="screenshots/carauction.png" -->
+          <img src="img/CA.png" alt="Real-Time Car Auction Platform" class="bento-img" />
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-top">
+              <span class="bento-index">02</span>
+              <a href="https://github.com/gmsujan/CarAuction_576.git" target="_blank" rel="noopener" class="bento-gh" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+            <div class="bento-bottom">
+              <div class="bento-tags">
+                <span>C#</span><span>.NET</span><span>SignalR</span><span>Docker</span>
+              </div>
+              <h3>Real-Time Car Auction Platform</h3>
+              <p>Microservices learning project from a Udemy course. Live bidding via SignalR, Duende IdentityServer auth, fully containerised with Docker.</p>
+              <div class="bento-meta">
+                <span class="bento-badge bento-badge--learn">Udemy / COMPX576</span>
+                <span class="bento-date">Feb – Jun 2025</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 3 ── -->
+        <article class="bento-card reveal" data-category="cloud fullstack">
+          <!-- 📸 Add your screenshot: src="screenshots/kanban.png" -->
+          <img src="img/kb.png" alt="Cloud Kanban Management Tool" class="bento-img" />
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-top">
+              <span class="bento-index">03</span>
+            </div>
+            <div class="bento-bottom">
+              <div class="bento-tags">
+                <span>React</span><span>Node.js</span><span>AWS</span><span>Lambda</span>
+              </div>
+              <h3>Cloud Kanban Management Tool</h3>
+              <p>Full-stack Kanban tool on AWS - EC2, S3, RDS, Cognito, Lambda, CloudFront, Route 53.</p>
+              <div class="bento-meta">
+                <span class="bento-badge">Group Project · COMPX527</span>
+                <span class="bento-date">Jul – Nov 2024</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 4 ── -->
+        <article class="bento-card reveal" data-category="design">
+          <!-- 📸 Add your screenshot: src="screenshots/lakewaikare.png" -->
+          <img src="img/LW.png" alt="Lake Waikare Mobile App Prototype" class="bento-img" />
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-top">
+              <span class="bento-index">04</span>
+              <a href="https://github.com/gmsujan/LakeWaikare.git" target="_blank" rel="noopener" class="bento-gh" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+            <div class="bento-bottom">
+              <div class="bento-tags">
+                <span>Canva</span><span>UI/UX</span><span>Mobile</span>
+              </div>
+              <h3>Lake Waikare Mobile App Prototype</h3>
+              <p>Mobile prototype preserving Māori culture via GPS storytelling, interactive quizzes, and event tracking.</p>
+              <div class="bento-meta">
+                <span class="bento-badge">Solo · CSMAX570</span>
+                <span class="bento-date">Feb – Jun 2025</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span>04</span><span>SKILLS</span>
+      </div>
+      <h2 class="section-heading reveal">Technical Arsenal</h2>
+    </div>
+
+    <!-- ── Infinite marquee ticker ── -->
+    <div class="skills-marquee reveal">
+      <div class="marquee-track">
+        <!-- duplicated for seamless loop -->
+        <span class="mq-item">C#</span><span class="mq-dot">·</span>
+        <span class="mq-item">ASP.NET Core</span><span class="mq-dot">·</span>
+        <span class="mq-item">PostgreSQL</span><span class="mq-dot">·</span>
+        <span class="mq-item">Docker</span><span class="mq-dot">·</span>
+        <span class="mq-item">AWS</span><span class="mq-dot">·</span>
+        <span class="mq-item">SignalR</span><span class="mq-dot">·</span>
+        <span class="mq-item">React</span><span class="mq-dot">·</span>
+        <span class="mq-item">.NET Framework</span><span class="mq-dot">·</span>
+        <span class="mq-item">Microservices</span><span class="mq-dot">·</span>
+        <span class="mq-item">Git</span><span class="mq-dot">·</span>
+        <span class="mq-item">MySQL</span><span class="mq-dot">·</span>
+        <span class="mq-item">TypeScript</span><span class="mq-dot">·</span>
+        <span class="mq-item">Node.js</span><span class="mq-dot">·</span>
+        <span class="mq-item">REST APIs</span><span class="mq-dot">·</span>
+        <!-- duplicate -->
+        <span class="mq-item">C#</span><span class="mq-dot">·</span>
+        <span class="mq-item">ASP.NET Core</span><span class="mq-dot">·</span>
+        <span class="mq-item">PostgreSQL</span><span class="mq-dot">·</span>
+        <span class="mq-item">Docker</span><span class="mq-dot">·</span>
+        <span class="mq-item">AWS</span><span class="mq-dot">·</span>
+        <span class="mq-item">SignalR</span><span class="mq-dot">·</span>
+        <span class="mq-item">React</span><span class="mq-dot">·</span>
+        <span class="mq-item">.NET Framework</span><span class="mq-dot">·</span>
+        <span class="mq-item">Microservices</span><span class="mq-dot">·</span>
+        <span class="mq-item">Git</span><span class="mq-dot">·</span>
+        <span class="mq-item">MySQL</span><span class="mq-dot">·</span>
+        <span class="mq-item">TypeScript</span><span class="mq-dot">·</span>
+        <span class="mq-item">Node.js</span><span class="mq-dot">·</span>
+        <span class="mq-item">REST APIs</span><span class="mq-dot">·</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="skills-body">
+
+        <!-- ── Left: hero stack card ── -->
+        <div class="skills-hero-card reveal-left">
+          <div class="shc-label">Primary Stack</div>
+          <div class="shc-stack">
+            <span class="shc-big">C#</span>
+            <span class="shc-big shc-dim">.NET</span>
+            <span class="shc-big">SQL</span>
+            <span class="shc-big shc-dim">AWS</span>
+          </div>
+          <p class="shc-desc">Backend-first developer with production experience in enterprise .NET systems, PostgreSQL databases, and AWS cloud infrastructure.</p>
+          <div class="shc-exp">
+            <div class="shc-exp-item">
+              <span class="shc-exp-num">2+</span>
+              <span class="shc-exp-label">Years with C# / .NET</span>
+            </div>
+            <div class="shc-exp-item">
+              <span class="shc-exp-num">4</span>
+              <span class="shc-exp-label">Cloud projects on AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Right: category rows ── -->
+        <div class="skills-categories reveal-right">
+
+          <div class="scat-row" style="--cat-color: #a5ff64;">
+            <div class="scat-header">
+              <span class="scat-icon">⚙️</span>
+              <span class="scat-title">Backend</span>
+            </div>
+            <div class="scat-pills">
+              <span>C#</span><span>ASP.NET Core</span><span>.NET Framework</span>
+              <span>REST APIs</span><span>Microservices</span><span>SignalR</span>
+            </div>
+          </div>
+
+          <div class="scat-row" style="--cat-color: #64d4ff;">
+            <div class="scat-header">
+              <span class="scat-icon">🗄️</span>
+              <span class="scat-title">Databases</span>
+            </div>
+            <div class="scat-pills">
+              <span>PostgreSQL</span><span>MySQL</span><span>pgAdmin</span>
+              <span>Data Modelling</span><span>Query Optimisation</span><span>Crystal Reports</span>
+            </div>
+          </div>
+
+          <div class="scat-row" style="--cat-color: #ff9d64;">
+            <div class="scat-header">
+              <span class="scat-icon">☁️</span>
+              <span class="scat-title">Cloud &amp; DevOps</span>
+            </div>
+            <div class="scat-pills">
+              <span>AWS EC2</span><span>AWS S3</span><span>Lambda</span>
+              <span>Cognito</span><span>Docker</span><span>Git / GitHub</span>
+            </div>
+          </div>
+
+          <div class="scat-row" style="--cat-color: #c4a5ff;">
+            <div class="scat-header">
+              <span class="scat-icon">🎨</span>
+              <span class="scat-title">Frontend &amp; Tools</span>
+            </div>
+            <div class="scat-pills">
+              <span>React</span><span>JavaScript</span><span>TypeScript</span>
+              <span>Node.js</span><span>Canva</span><span>Agile / Scrum</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <!-- Top: label + big CTA headline -->
+      <div class="section-label">
+        <span>05</span><span>CONTACT</span>
+      </div>
+
+      <div class="contact-top reveal">
+        <h2 class="contact-heading">Got a role<br/><span class="contact-heading-accent">or project?</span></h2>
+        <p class="contact-sub">I'm actively looking for software development roles in New Zealand. Full-time, contract, or an interesting collaboration - my inbox is always open.</p>
+      </div>
+
+      <!-- Middle: 3 quick-links row -->
+      <div class="contact-links reveal">
+        <a href="mailto:sujanmagar6861@gmail.com" class="clink">
+          <span class="clink-label">Email</span>
+          <span class="clink-value">sujanmagar6861@gmail.com</span>
+          <span class="clink-arrow">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sujan-gharti-magar-nz" target="_blank" rel="noopener" class="clink">
+          <span class="clink-label">LinkedIn</span>
+          <span class="clink-value">sujan-gharti-magar-nz</span>
+          <span class="clink-arrow">↗</span>
+        </a>
+        <a href="https://github.com/gmsujan" target="_blank" rel="noopener" class="clink">
+          <span class="clink-label">GitHub</span>
+          <span class="clink-value">github.com/gmsujan</span>
+          <span class="clink-arrow">↗</span>
+        </a>
+        <div class="clink clink--plain">
+          <span class="clink-label">Location</span>
+          <span class="clink-value">Hamilton, New Zealand</span>
+        </div>
+      </div>
+
+      <!-- Bottom: full-width form card -->
+      <div class="contact-form-card reveal">
+
+        <!-- Status messages (hidden by default) -->
+        <div class="form-status form-status--success" id="formSuccess" hidden>
+          <span class="form-status-icon">✓</span>
+          <div>
+            <strong>Message sent!</strong>
+            <p>Thanks for reaching out - I'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+        <div class="form-status form-status--error" id="formError" hidden>
+          <span class="form-status-icon">✕</span>
+          <div>
+            <strong>Something went wrong.</strong>
+            <p>Please try again or email me directly at sujanmagar6861@gmail.com</p>
+          </div>
+        </div>
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/mwvaoyod"
+          method="POST"
+          novalidate
+        >
+          <div class="cform-row">
+            <div class="cform-group">
+              <label for="name">
+                <span class="cform-num">01</span> Your Name
+              </label>
+              <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" required />
+            </div>
+            <div class="cform-group">
+              <label for="email">
+                <span class="cform-num">02</span> Email Address
+              </label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+
+          <div class="cform-group">
+            <label for="subject">
+              <span class="cform-num">03</span> Subject
+            </label>
+            <input type="text" id="subject" name="subject" placeholder="Job opportunity / Collaboration / Other" />
+          </div>
+
+          <div class="cform-group">
+            <label for="message">
+              <span class="cform-num">04</span> Message
+            </label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the role, project, or what you have in mind..." required></textarea>
+          </div>
+
+          <div class="cform-footer">
+            <p class="cform-note">
+              <span class="cform-note-dot"></span>
+              Powered by Formspree · Usually replies within 24h
+            </p>
+            <button type="submit" class="cform-submit" id="submitBtn">
+              <span class="cform-submit-text">Send Message</span>
+              <span class="cform-submit-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <!-- Loading spinner (shown while submitting) -->
+              <span class="cform-spinner" id="formSpinner" hidden>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="animation:spin360 0.8s linear infinite">
+                  <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2" stroke-dasharray="20" stroke-dashoffset="10"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="#hero" class="footer-logo">SGM_</a>
+          <p>Sujan Gharti Magar<br />Software Developer · Hamilton, NZ</p>
+        </div>
+        <div class="footer-right">
+          <p class="footer-copy">Built with ❤️ using HTML · CSS · JS</p>
+          <p class="footer-copy">© 2025 Sujan Gharti Magar. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
