@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujan Gharti Magar - Software Developer</title>
-  <meta name="description" content="Portfolio of Sujan Gharti Magar - Backend Developer, .NET Specialist, University of Waikato MIT Graduate." />
+  <title>Sujan Gharti Magar — Software Developer</title>
+  <meta name="description" content="Portfolio of Sujan Gharti Magar — Backend Developer, .NET Specialist, University of Waikato MIT Graduate." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -98,7 +98,7 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-num" data-count="5">0</span>
           <span class="stat-label">Projects</span>
         </div>
         <div class="stat-divider"></div>
@@ -142,21 +142,21 @@
           <h2 class="section-heading">Who I Am</h2>
           <p>I'm a <strong>backend-focused software developer</strong> based in Hamilton, New Zealand, with a Master of Information Technology from the University of Waikato and hands-on experience building production-grade systems.</p>
           <p>I spent over a year at <strong>Life Tech Private Limited</strong> developing backend services for Restaurant Management and POS systems, handling everything from API design to tax-compliant reporting. I love working at the intersection of <strong>clean architecture</strong> and <strong>real-world impact</strong>.</p>
-          <p>Outside of code, I coach football (head coach at Glenview United AFC), which keeps me sharp on teamwork, communication, and leading under pressure - skills I bring directly into engineering teams.</p>
+          <p>Outside of code, I coach football (head coach at Glenview United AFC), which keeps me sharp on teamwork, communication, and leading under pressure — skills I bring directly into engineering teams.</p>
 
           <div class="about-highlights">
             <div class="highlight-item">
               <span class="highlight-icon">🎓</span>
               <div>
                 <strong>MIT Graduate</strong>
-                <span>University of Waikato - 2025</span>
+                <span>University of Waikato — 2025</span>
               </div>
             </div>
             <div class="highlight-item">
               <span class="highlight-icon">🏆</span>
               <div>
                 <strong>VC International Excellence Scholarship</strong>
-                <span>University of Waikato - 2024</span>
+                <span>University of Waikato — 2024</span>
               </div>
             </div>
             <div class="highlight-item">
@@ -318,14 +318,46 @@
           <button class="filter-btn" data-filter="cloud">Cloud</button>
           <button class="filter-btn" data-filter="fullstack">Full Stack</button>
           <button class="filter-btn" data-filter="design">UI/Design</button>
+          <button class="filter-btn" data-filter="live">🟢 Live</button>
         </div>
       </div>
 
       <!-- ── BENTO GRID ── -->
       <div class="bento-grid" id="projectsGrid">
 
-        <!-- ── PROJECT 1 - FEATURED (tall left) ── -->
-        <article class="bento-card bento-featured reveal" data-category="backend fullstack">
+        <!-- ── PROJECT 5 — FEATURED (live real-world site) ── -->
+        <article class="bento-card bento-featured reveal" data-category="fullstack design live">
+          <!-- 📸 Add your screenshot: src="screenshots/himalayanfc.png" -->
+          <img src="img/HFC.png" alt="Himalayan FC Website" class="bento-img" />
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-top">
+              <span class="bento-index">05</span>
+              <div style="display:flex;gap:0.5rem;">
+                <a href="https://himalayan-fc.vercel.app/" target="_blank" rel="noopener" class="bento-gh" aria-label="Live Site" title="Live Site">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </a>
+                <a href="https://github.com/gmsujan/himalayan-fc.git" target="_blank" rel="noopener" class="bento-gh" aria-label="GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bento-bottom">
+              <div class="bento-tags">
+                <span>Next.js</span><span>Supabase</span><span>Vercel</span><span>Resend</span><span>HTML/CSS</span>
+              </div>
+              <h3>Himalayan FC — Club Website</h3>
+              <p>Full production website for Himalayan FC, a real football club based in Hamilton, NZ (est. 2024). Features fixtures, team pages, gallery, news, and a contact system. Live at himalayan-fc.vercel.app.</p>
+              <div class="bento-meta">
+                <span class="bento-badge bento-badge--live">🟢 Live · Real Project</span>
+                <span class="bento-date">2024 – Present</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 1 ── -->
+        <article class="bento-card reveal" data-category="backend fullstack">
           <!-- 📸 Add your screenshot: src="screenshots/kaumatua.png" -->
           <img src="img/KWRS.png" alt="Kaumātua Wellbeing Reporting System" class="bento-img" />
           <div class="bento-overlay"></div>
@@ -341,9 +373,9 @@
                 <span>C#</span><span>.NET Core</span><span>PostgreSQL</span><span>ASP.NET</span>
               </div>
               <h3>Kaumātua Wellbeing Reporting System</h3>
-              <p>ASP.NET Core web app for Rauawaawa Kaumātua Charitable Trust - managing kaumātua profiles, wellbeing assessments, and service coordination for Māori elders.</p>
+              <p>ASP.NET Core web app for Rauawaawa Kaumātua Charitable Trust — managing kaumātua profiles, wellbeing assessments, and service coordination for Māori elders.</p>
               <div class="bento-meta">
-                <span class="bento-badge">Group Project · CSMAX596</span>
+                <span class="bento-badge">SOLO Project for RKCT organisation</span>
                 <span class="bento-date">Jul – Nov 2025</span>
               </div>
             </div>
@@ -390,7 +422,7 @@
                 <span>React</span><span>Node.js</span><span>AWS</span><span>Lambda</span>
               </div>
               <h3>Cloud Kanban Management Tool</h3>
-              <p>Full-stack Kanban tool on AWS - EC2, S3, RDS, Cognito, Lambda, CloudFront, Route 53.</p>
+              <p>Full-stack Kanban tool on AWS — EC2, S3, RDS, Cognito, Lambda, CloudFront, Route 53.</p>
               <div class="bento-meta">
                 <span class="bento-badge">Group Project · COMPX527</span>
                 <span class="bento-date">Jul – Nov 2024</span>
@@ -562,7 +594,7 @@
 
       <div class="contact-top reveal">
         <h2 class="contact-heading">Got a role<br/><span class="contact-heading-accent">or project?</span></h2>
-        <p class="contact-sub">I'm actively looking for software development roles in New Zealand. Full-time, contract, or an interesting collaboration - my inbox is always open.</p>
+        <p class="contact-sub">I'm actively looking for software development roles in New Zealand. Full-time, contract, or an interesting collaboration — my inbox is always open.</p>
       </div>
 
       <!-- Middle: 3 quick-links row -->
@@ -596,7 +628,7 @@
           <span class="form-status-icon">✓</span>
           <div>
             <strong>Message sent!</strong>
-            <p>Thanks for reaching out - I'll get back to you within 24 hours.</p>
+            <p>Thanks for reaching out — I'll get back to you within 24 hours.</p>
           </div>
         </div>
         <div class="form-status form-status--error" id="formError" hidden>
@@ -606,10 +638,18 @@
             <p>Please try again or email me directly at sujanmagar6861@gmail.com</p>
           </div>
         </div>
+
+        <!--
+          FORMSPREE SETUP (takes 2 minutes):
+          1. Go to https://formspree.io and sign up free
+          2. Create a new form — copy your Form ID (looks like: xzzpqabc)
+          3. Replace YOUR_FORM_ID below with your actual ID
+          e.g. action="https://formspree.io/f/xzzpqabc"
+        -->
         <form
           class="contact-form"
           id="contactForm"
-          action="https://formspree.io/f/mwvaoyod"
+          action="https://formspree.io/f/YOUR_FORM_ID"
           method="POST"
           novalidate
         >
